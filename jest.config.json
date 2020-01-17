@@ -1,0 +1,56 @@
+{
+  "roots": [
+    "./specs/",
+    "./src/"
+  ],
+  "verbose": true,
+  "collectCoverage": true,
+  "coverageDirectory": "./dashboard/unit-testing",
+  "coverageReporters": [
+    "json",
+    "lcov",
+    "text",
+    "text-summary"
+  ],
+  "collectCoverageFrom": [
+    "src/**",
+    "!**/index.js",
+    "!**/app.mount.jsx",
+    "!**/cao.root.jsx",
+    "!**/postcss.config.js"
+  ],
+  "coveragePathIgnorePatterns": [
+    "/dist/",
+    "/dist-release/",
+    "src/store/",
+    "src/initSagas.js",
+    "src/containers/",
+    "src/routes/"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "statements": 98,
+      "branches": 96,
+      "functions": 96,
+      "lines": 98.5
+    }
+  },
+  "globals": {
+    "apigeeRootEndPoint": true,
+    "APIGEE_FF_API_KEY":true,
+    "webpack": {
+      "title": "CAO Application",
+      "brandName": "",
+      "basePath": "/",
+      "brandHome": "http://localhost:9003/",
+      "brandPrivacy": "http://localhost:9003/"
+    },
+    "lpTag": true
+  },
+  "moduleFileExtensions": [
+    "js",
+    "jsx"
+  ],
+  "resources": "usable",
+  "setupTestFrameworkScriptFile": "./test-setup.jsx"
+}

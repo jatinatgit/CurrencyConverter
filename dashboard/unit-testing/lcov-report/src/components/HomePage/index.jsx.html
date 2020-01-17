@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/HomePage/index.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/components/HomePage</a> index.jsx
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState, useEffect } from 'react';
+import { Page } from 'components';
+import { CURRENCY_OPTIONS } from 'constants/common';
+import { Header, Dropdown, Input, Dimmer, Loader, Table, Message } from 'semantic-ui-react';
+&nbsp;
+const HomePage = props =&gt; {
+&nbsp;
+    const [amount, setAmount] = useState(1);
+    const [fromCurr, setFromCurr] = useState('USD');
+    const [toCurr, setToCurr] = useState('EUR');
+&nbsp;
+    useEffect(() =&gt; {
+        convertCurrency();
+    }, [fromCurr, toCurr]);
+    const [result, setResult] = useState('');
+&nbsp;
+    const handleChangeFromCurr = (e, { value }) =&gt; {
+        setFromCurr(value); 
+    }
+&nbsp;
+    const handleChangeToCurr = (e, { value }) =&gt; {
+        setToCurr(value);
+    }
+&nbsp;
+    const handleChangeAmount = <span class="fstat-no" title="function not covered" >(e</span>, { value }) =&gt; {
+<span class="cstat-no" title="statement not covered" >        setAmount(value);</span>
+<span class="cstat-no" title="statement not covered" >        setResult(result * amount);</span>
+    }
+&nbsp;
+    const convertCurrency = () =&gt; {
+        props.CurrencyService.convertCurrency({fromCurr, amount, toCurr});
+        if(dataList.length) {
+            setResult(dataList[dataList.length -1].toAmount * amount);
+        }
+    }
+&nbsp;
+    const renderTableData = dataList =&gt; (
+        &lt;Table.Body&gt;
+            {dataList.map((data, i) =&gt; (
+                &lt;Table.Row key={`data_${i}`}&gt;
+                    &lt;Table.Cell&gt;{data.fromAmount}&lt;/Table.Cell&gt;
+                    &lt;Table.Cell&gt;{data.fromCurr}&lt;/Table.Cell&gt;
+                    &lt;Table.Cell&gt;{data.toCurr}&lt;/Table.Cell&gt;
+                    &lt;Table.Cell&gt;{data.toAmount * data.fromAmount}&lt;/Table.Cell&gt;
+                &lt;/Table.Row&gt;
+            ))}
+        &lt;/Table.Body&gt;
+    )
+&nbsp;
+    const { dataList, loading, error } = props.conversions;
+    return &lt;section className="currency-panel"&gt;
+        &lt;Page&gt;
+            &lt;div className="form-container centered"&gt;
+                &lt;Dimmer active={loading} inverted&gt;
+                    &lt;Loader inverted&gt;Loading&lt;/Loader&gt;
+                &lt;/Dimmer&gt;
+                
+                {error &amp;&amp; &lt;Message negative&gt;{error}&lt;/Message&gt;}
+                &lt;div className="field-row"&gt;
+                    &lt;Dropdown
+                        fluid
+                        options={CURRENCY_OPTIONS}
+                        value={fromCurr}
+                        onChange={handleChangeFromCurr}
+                    /&gt;
+&nbsp;
+                    &lt;Dropdown
+                        fluid
+                        options={CURRENCY_OPTIONS}
+                        value={toCurr}
+                        onChange={handleChangeToCurr}
+                    /&gt;
+                &lt;/div&gt;
+                &lt;div className="field-row"&gt;
+                    &lt;Input id="fromAmount" type="number" value={amount} placeholder="Amount" onChange={handleChangeAmount}/&gt;
+                    &lt;Input id="toAmount" type="number" readOnly value={result} /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+&nbsp;
+            {dataList.length &gt; 0 &amp;&amp; 
+                &lt;div className="conversion-table"&gt;
+                    &lt;Header as="h3"&gt;Your conversion history&lt;/Header&gt;
+                    &lt;Table celled unstackable color='blue'&gt;
+                        &lt;Table.Header&gt;
+                        &lt;Table.Row className="head-row"&gt;
+                            &lt;Table.HeaderCell colSpan="2"&gt;From&lt;/Table.HeaderCell&gt;
+                            &lt;Table.HeaderCell colSpan="2"&gt;To&lt;/Table.HeaderCell&gt;
+                        &lt;/Table.Row&gt;
+                        &lt;Table.Row&gt;
+                            &lt;Table.HeaderCell&gt;Amount&lt;/Table.HeaderCell&gt;
+                            &lt;Table.HeaderCell&gt;Currency&lt;/Table.HeaderCell&gt;
+                            &lt;Table.HeaderCell&gt;Currency&lt;/Table.HeaderCell&gt;
+                            &lt;Table.HeaderCell&gt;Amount&lt;/Table.HeaderCell&gt;
+                        &lt;/Table.Row&gt;
+                        &lt;/Table.Header&gt;
+                        {renderTableData(dataList)}
+                    &lt;/Table&gt;
+                &lt;/div&gt;
+            }
+        &lt;/Page&gt;
+    &lt;/section&gt;
+}
+&nbsp;
+export default HomePage;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Jan 17 2020 14:47:54 GMT+0000 (GMT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
